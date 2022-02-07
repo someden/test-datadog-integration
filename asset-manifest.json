@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/someden.github.io/test-datadog-integration/static/css/main.bca2956b.css",
+    "main.js": "/someden.github.io/test-datadog-integration/static/js/main.b06c352f.js",
+    "static/js/787.d3e919db.chunk.js": "/someden.github.io/test-datadog-integration/static/js/787.d3e919db.chunk.js",
+    "static/media/logo.svg": "/someden.github.io/test-datadog-integration/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/someden.github.io/test-datadog-integration/index.html",
+    "main.bca2956b.css.map": "/someden.github.io/test-datadog-integration/static/css/main.bca2956b.css.map",
+    "main.b06c352f.js.map": "/someden.github.io/test-datadog-integration/static/js/main.b06c352f.js.map",
+    "787.d3e919db.chunk.js.map": "/someden.github.io/test-datadog-integration/static/js/787.d3e919db.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bca2956b.css",
+    "static/js/main.b06c352f.js"
+  ]
+}
