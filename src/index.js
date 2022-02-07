@@ -3,6 +3,23 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { datadogRum } from '@datadog/browser-rum';
+
+datadogRum.init({
+  applicationId: process.env.REACT_APP_DATADOG_APPLICATION_ID,
+  clientToken: process.env.REACT_APP_DATADOG_CLIENT_TOKEN,
+  site: process.env.REACT_APP_DATADOG_SITE,
+  service:process.env.REACT_APP_NAME,
+  version: process.env.REACT_APP_VERSION,
+  env: process.env.NODE_ENV,
+  sampleRate: 100,
+  trackInteractions: true,
+});
+
+datadogRum.startSessionReplayRecording();
+
+console.log(process.env.REACT_APP_NAME);
+console.log(process.env.REACT_APP_VERSION);
 
 ReactDOM.render(
   <React.StrictMode>

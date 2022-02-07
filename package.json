@@ -1,11 +1,14 @@
 {
   "name": "test-datadog-integration",
   "version": "0.1.0",
-  "private": true,
+  "homepage": "someden.github.io/test-datadog-integration/",
   "dependencies": {
+    "@datadog/browser-rum": "^4.2.0",
+    "@datadog/datadog-ci": "^0.17.13",
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
+    "gh-pages": "^3.2.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "5.0.0",
@@ -15,7 +18,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "deploy": "gh-pages -d build",
+    "upload-sourcemaps": "datadog-ci sourcemaps upload /build --service=$(npm pkg get name) --release-version=$(npm pkg get version) --minified-path-prefix=/"
   },
   "eslintConfig": {
     "extends": [
