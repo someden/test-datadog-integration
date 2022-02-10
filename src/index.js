@@ -6,20 +6,17 @@ import reportWebVitals from './reportWebVitals';
 import { datadogRum } from '@datadog/browser-rum';
 
 datadogRum.init({
-  applicationId: process.env.REACT_APP_DATADOG_APPLICATION_ID,
-  clientToken: process.env.REACT_APP_DATADOG_CLIENT_TOKEN,
-  site: process.env.REACT_APP_DATADOG_SITE,
-  service:process.env.REACT_APP_NAME,
-  version: process.env.REACT_APP_VERSION,
-  env: process.env.NODE_ENV,
+  applicationId: '0c07075d-d5d8-4b6e-a52e-3d4fd73f77d0',
+  clientToken: 'pub21614b888027ba0a2d54992925e44366',
+  site: 'datadoghq.com',
+  service: 'test-datadog-integration',
+  version: '0.1.0',
+  env: 'production',
   sampleRate: 100,
   trackInteractions: true,
 });
 
 datadogRum.startSessionReplayRecording();
-
-console.log(process.env.REACT_APP_NAME);
-console.log(process.env.REACT_APP_VERSION);
 
 ReactDOM.render(
   <React.StrictMode>

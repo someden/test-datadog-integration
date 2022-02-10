@@ -19,7 +19,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "deploy": "gh-pages -d build",
-    "upload-sourcemaps": "datadog-ci sourcemaps upload ./build --service=$(npm pkg get name) --release-version=$(npm pkg get version) --minified-path-prefix=/"
+    "upload-sourcemaps": "datadog-ci sourcemaps upload ./build --service=test-datadog-integration --release-version=0.1.0 --minified-path-prefix=/"
   },
   "eslintConfig": {
     "extends": [
