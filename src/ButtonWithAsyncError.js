@@ -1,7 +1,7 @@
 function throwAsyncError() {
   new Promise((res, rej) => {
     setTimeout(() => {
-      rej(new Error('Async Error'));
+      rej(new Error(`Async Error ${process.env.REACT_APP_VERSION}`));
     }, 10);
   });
 }

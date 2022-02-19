@@ -1,5 +1,5 @@
 function throwCustomError() {
-  throw new Error('Custom Error');
+  throw new Error(`Custom Error ${process.env.REACT_APP_VERSION}`);
 }
 
 function ButtonWithCustomError() {
